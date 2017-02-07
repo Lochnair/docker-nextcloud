@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv bash
+sed -i 's/user = nobody/user = nginx/' "/etc/php7/php-fpm.d/www.conf"
+sed -i 's/group = nobody/group = nginx/' "/etc/php7/php-fpm.d/www.conf"

@@ -1,0 +1,2 @@
+#!/usr/bin/with-contenv bash
+sed -i "s/cloud.example.com/$NC_DOMAIN/g" "/etc/nginx/conf.d/nextcloud.conf"

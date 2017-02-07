@@ -3,6 +3,12 @@ MAINTAINER Lochnair <me@lochnair.net>
 
 LABEL Description="Docker image for NextCloud"
 
+ENV DB_PASSWORD "CHANGE_THIS!"
+ENV NC_DOMAIN "cloud.example.com"
+
+# Stop container if initialization fails
+ENV S6_BEHAVIOUR_IF_STAGE2_FAILS "2"
+
 # Install MySQL
 RUN \
 apk add \

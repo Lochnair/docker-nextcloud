@@ -1,0 +1,2 @@
+#!/usr/bin/with-contenv bash
+sed -i 's@listen = .*@listen =/var/run/php7-fpm.sock@' "/etc/php7/php-fpm.d/www.conf"
